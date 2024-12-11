@@ -17,6 +17,7 @@ app.use(express.urlencoded({ extended: false}))
 //Declare the path to the API/routes here
 app.use('/api/auth', require('./routes/userRoutes'));
 app.use('/api/notes', require('./note-app/routes/projectRoutes'));
+app.use('/api/products', require('./grocery-price-list-app/routes/productRoutes'));
 
 app.use(errorHandler)
 

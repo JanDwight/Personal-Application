@@ -2,8 +2,8 @@ const mongoose = require('mongoose')
 
 const projectModel = mongoose.Schema({
     user_id: {
-        type: Number,
-        required: false
+        type: mongoose.Schema.Types.ObjectId,
+        required: true
     },
 
     project_name: {
@@ -15,8 +15,8 @@ const projectModel = mongoose.Schema({
     section: {
       section_name: {
         type: String,
-        required: true,
-        unique: true
+        required: false,
+        unique: false
       }
     }
 }, {
