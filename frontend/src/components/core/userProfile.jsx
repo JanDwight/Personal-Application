@@ -6,7 +6,7 @@ export default function UserProfile() {
 
   return (
     <>
-      <div>
+      <div className="relative">
         <button 
           className="h-10 w-10 cursor-pointer" 
           onClick={() => setIsClicked(!isClicked)}
@@ -15,7 +15,7 @@ export default function UserProfile() {
         </button>
 
         {isClicked && (
-          <div className="absolute right-3 w-48 bg-gray-500 rounded-b-lg shadow-lg z-10">
+          <div className="absolute right-3 w-48 bg-gray-500 rounded-b-lg shadow-lg z-10 origin-top duration-500" style={{ top: '-0%' }}>
             <ul className="py-1 text-black">
               <li 
                 className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
